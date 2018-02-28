@@ -4,7 +4,13 @@
   "description": "Convert your ajax polling request to websocket. Acts like a middleman so that your endpoints will be like socket.",
   "main": "dist/App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run mocha -- npx mocha --opts ./test/mocha.opts --recursive test/",
+    "test-single": "npm run mocha -- npx mocha --opts ./test/mocha.opts",
+    "lint": "eslint src/",
+    "watch": "npx babel ./src -d ./dist -w",
+    "build": "rimraf ./dist && npx babel ./src -d ./dist",
+    "mocha": "npm run lint && cross-env NODE_ENV=test",
+    "start": "nodemon --watch dist dist/App.js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +29,11 @@
   },
   "homepage": "https://github.com/ejancorp/ajaxtonodepoll#readme",
   "dependencies": {
-    "lodash": "^4.17.5",
-    "socket.io": "^2.0.4",
     "bluebird": "^3.5.1",
-    "nodemon": "^1.15.1"
+    "got": "^8.2.0",
+    "lodash": "^4.17.5",
+    "nodemon": "^1.15.1",
+    "socket.io": "^2.0.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
