@@ -1,0 +1,14 @@
+version: '3'
+
+networks:
+    ajaxsocket:
+        driver: bridge
+
+services:
+
+    route:
+        build: ./
+        networks:
+            - ajaxsocket
+        ports:
+            - "${APP_PORT}:${APP_PORT}"

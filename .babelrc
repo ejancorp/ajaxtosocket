@@ -1,0 +1,8 @@
+{
+  "presets": ["env"],
+  "env": {},
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-regenerator"
+  ]
+}

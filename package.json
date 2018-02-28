@@ -1,0 +1,46 @@
+{
+  "name": "ajaxtosocket",
+  "version": "0.0.1",
+  "description": "Convert your ajax polling request to websocket. Acts like a middleman so that your endpoints will be like socket.",
+  "main": "dist/App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejancorp/ajaxtonodepoll.git"
+  },
+  "keywords": [
+    "ajax",
+    "node",
+    "poll",
+    "socket"
+  ],
+  "author": "Ej Corpuz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ejancorp/ajaxtonodepoll/issues"
+  },
+  "homepage": "https://github.com/ejancorp/ajaxtonodepoll#readme",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "socket.io": "^2.0.4",
+    "bluebird": "^3.5.1",
+    "nodemon": "^1.15.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.3",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "sinon": "^4.1.2",
+    "sinon-chai": "^2.14.0"
+  }
+}
