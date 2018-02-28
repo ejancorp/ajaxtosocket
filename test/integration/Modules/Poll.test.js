@@ -25,12 +25,10 @@ describe('Poll Test', () => {
   describe('#start', () => {
     it('should start the method polling', () => {
       const method = module.start();
+      expect(method).to.be.an('Object');
 
       timer.tick(interval);
-      expect(method).to.be.an('Object');
       expect(methodStub).to.be.calledOnce;
-      timer.tick(interval);
-      expect(callbackStub).to.be.calledOnce;
     });
   });
 });

@@ -26,7 +26,8 @@ class Poll {
     this.poll = setTimeout(
       () => this.method()
         .then(result => this.callback(result, null))
-        .catch(error => this.callback(null, error)),
+        .catch(error => this.callback(null, error))
+        .then(() => this.start()),
       this.interval,
     );
 

@@ -12,7 +12,7 @@ class Request {
    */
   static get(url = '') {
     return new Promise((resolve, reject) => got(url.toString())
-      .then(response => resolve(response))
+      .then(response => resolve(response.body))
       .catch(error => reject(error)));
   }
 }
