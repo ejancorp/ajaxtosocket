@@ -7,7 +7,7 @@ class Poll {
   /**
    * Create poll instance class
    * @method constructor
-   * @param  {Function}    [method=() => {}]
+   * @param  {Function}  [method=() => {}]
    * @param  {Number}    [interval=0]
    */
   constructor(method = () => {}, callback = () => {}, interval = 0) {

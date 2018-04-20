@@ -30,6 +30,7 @@
   "homepage": "https://github.com/ejancorp/ajaxtonodepoll#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
+    "dotenv": "^5.0.1",
     "got": "^8.2.0",
     "lodash": "^4.17.5",
     "nodemon": "^1.15.1",
