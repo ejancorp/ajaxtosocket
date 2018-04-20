@@ -6,8 +6,8 @@ import Request from '../../../src/Modules/Request';
 describe('Request Test', () => {
   describe('#get', () => {
     it('should return the requested data', (done) => {
-      Request.get('https://api.fixer.io/latest').then((result) => {
-        expect(result).to.be.an('Object').that.is.not.empty;
+      Request.get('https://jsonplaceholder.typicode.com/posts').then((result) => {
+        expect(result).to.be.not.empty;
       }).then(done, done);
     });
 
